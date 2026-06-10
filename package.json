@@ -1,0 +1,27 @@
+{
+  "name": "cro-auditor",
+  "version": "0.1.0",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace=@cro-auditor/web",
+    "dev:api": "npm run dev --workspace=@cro-auditor/api",
+    "dev:all": "npm run dev --workspace=@cro-auditor/api & npm run dev --workspace=@cro-auditor/web",
+    "build": "npm run build --workspace=@cro-auditor/web",
+    "build:web": "npm run build --workspace=@cro-auditor/web",
+    "build:api": "npm run build --workspace=@cro-auditor/api",
+    "test": "npm run test --workspace=@cro-auditor/api",
+    "deploy": "npm run deploy:api && npm run deploy:web",
+    "deploy:api": "npm run deploy --workspace=@cro-auditor/api",
+    "logs:api": "npm run logs --workspace=@cro-auditor/api",
+    "secrets:upload": "npm run secrets:upload --workspace=@cro-auditor/api",
+    "deploy:web": "npm run deploy --workspace=@cro-auditor/web",
+    "deploy:web:preview": "npm run deploy:preview --workspace=@cro-auditor/web"
+  },
+  "optionalDependencies": {
+    "@esbuild/darwin-arm64": "^0.27.3"
+  }
+}
