@@ -1,0 +1,10 @@
+# Copy to .dev.vars in this folder (apps/api/)
+# Wrangler reads this automatically on wrangler dev
+
+ALLOWED_ORIGIN=http://localhost:5173
+OPENAI_API_KEY=
+PAGESPEED_API_KEY=
+SUPABASE_URL=
+SUPABASE_ANON_KEY=
+SUPABASE_SERVICE_ROLE_KEY=
+SUPABASE_DB_SCHEMA=cro_auditor

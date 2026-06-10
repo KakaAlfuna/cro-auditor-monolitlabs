@@ -1,0 +1,28 @@
+{
+  "name": "@cro-auditor/api",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "logs": "wrangler tail --format pretty",
+    "secrets": "wrangler secret put",
+    "secrets:upload": "wrangler secret bulk .dev.vars",
+    "types": "wrangler types",
+    "test": "vitest run --environment node",
+    "build": "wrangler deploy --dry-run"
+  },
+  "dependencies": {
+    "@cro-auditor/shared": "*",
+    "@supabase/supabase-js": "^2.49.1",
+    "cheerio": "^1.0.0",
+    "openai": "^4.86.1"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20250317.0",
+    "typescript": "^5.8.2",
+    "vitest": "^3.0.9",
+    "wrangler": "^4.14.0"
+  }
+}
