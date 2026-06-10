@@ -1,0 +1,16 @@
+{
+  "name": "@cro-auditor/shared",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    "./constants/rules": "./src/constants/rules.ts",
+    "./constants/audit-framework": "./src/constants/audit-framework/index.ts",
+    "./constants/audit-framework/krug": "./src/constants/audit-framework/krug.ts",
+    "./constants/audit-framework/cialdini": "./src/constants/audit-framework/cialdini.ts",
+    "./types/audit": "./src/types/audit.ts",
+    "./normalize-audit-analysis": "./src/normalize-audit-analysis.ts",
+    "./compute-overall-score": "./src/compute-overall-score.ts",
+    "./types/audit-stream": "./src/types/audit-stream.ts"
+  }
+}
