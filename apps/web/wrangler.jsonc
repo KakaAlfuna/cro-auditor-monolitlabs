@@ -1,0 +1,5 @@
+{
+  "$schema": "../../node_modules/wrangler/config-schema.json",
+  "name": "cro-auditor-web",
+  "pages_build_output_dir": "dist"
+}
