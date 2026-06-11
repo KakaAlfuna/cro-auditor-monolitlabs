@@ -76,6 +76,7 @@ cp apps/api/.dev.vars.example apps/api/.dev.vars
 #    supabase/migrations/004_drop_field_pagespeed_metrics.sql
 # Then add `cro_auditor` to Dashboard → Settings → Data API → Exposed schemas
 # Enable Email auth in Dashboard → Authentication → Providers
+# Disable "Confirm email" so users can sign in immediately after registration
 
 # 4. Development (two terminals)
 npm run dev:api    # API on http://localhost:8787

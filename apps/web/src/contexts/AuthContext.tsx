@@ -24,12 +24,8 @@ const AuthContext = createContext<AuthContextValue | null>(null);
 function formatAuthError(message: string): string {
   const normalized = message.toLowerCase();
 
-  if (normalized.includes("email not confirmed")) {
-    return "Email not confirmed yet. Check your inbox for the confirmation link, then try signing in again.";
-  }
-
   if (normalized.includes("invalid login credentials")) {
-    return "Invalid email or password. If you just registered, confirm your email first.";
+    return "Invalid email or password.";
   }
 
   if (normalized.includes("user already registered")) {

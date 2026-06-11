@@ -41,10 +41,7 @@ export function RegisterPage() {
     }
 
     setIsSubmitting(false);
-    navigate("/login", {
-      replace: true,
-      state: { message: "Account created. Check your email to confirm, then sign in." },
-    });
+    navigate("/", { replace: true });
   }
 
   return (
